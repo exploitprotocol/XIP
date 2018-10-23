@@ -33,7 +33,7 @@ def welcome():
     """)
 
 if __name__ == "__main__":
-    welcome()
+#    welcome()
 
     config = Parser().parse()
     logger = Logger(config["logger"])
@@ -47,4 +47,4 @@ if __name__ == "__main__":
             for ip in fd:
                 dispatcher.dispatch(config, ip) if not config["random"] else randomizer.randomize(ip)
 
-    print("")
+  #  print("")
